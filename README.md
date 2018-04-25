@@ -1,20 +1,20 @@
 # netconf
 extend by netconf.py
+## operation
+>get
 
-get
+>get-config
 
-get-config
+>edit-config
 
-edit-config
+>copy-config
 
-copy-config
+>delete-config
 
-delete-config
+>lock
 
-lock
+>unlock
 
-unlock
+>stream discovery
 
-stream discovery
-
-notify
+>notify
