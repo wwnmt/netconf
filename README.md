@@ -1,5 +1,5 @@
 # netconf
-extend by netconf.py
+extend by netconf.py.You can use netconf_client connect to netconf_server,then use follow operations.
 ## operation
 >get
 
