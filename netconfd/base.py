@@ -170,7 +170,7 @@ class NetconfFramingTransport(NetconfPacketTransport):
         else:
             msg += "]]>]]>"
 
-        #print(msg)
+        print(msg)
 
         # Apparently ssh has a bug that requires minimum of 64 bytes?
         for chunk in chunkit(msg, self.max_chunk, 64):
@@ -294,6 +294,7 @@ class NetconfSession(object):
         if self.debug:
             logger.debug("Sending message (%d): %s", len(msg), msg)
         pkt_stream.send_pdu(XML_HEADER + msg, self.new_framing)
+
 
     def _receive_message(self):
         # private method to receive a full message.
